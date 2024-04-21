@@ -4,72 +4,98 @@
 <title>Amazon</title>
 <style>
 body {
-background-color: #e9e9e9;
+font-family: Arial, sans-serif;
+margin: 0;
 }
 
-header {
-background-color: #333333;
+/* Header */
+.header {
+background-color: #333;
+padding: 30px;
+text-align: center;
 color: white;
-padding: 20px;
 }
 
-nav a {
+/* Navigation links */
+.header a {
 color: white;
-padding: 10px 20px;
 text-decoration: none;
+padding: 10px;
 display: inline-block;
 }
 
-nav a:hover {
-background-color: #555555;
+/* Navigation hover */
+.header a:hover {
+background-color: #ddd;
+color: black;
 }
 
-section#body {
-width: 80%;
-margin: auto;
+/* Body */
+.body {
 padding: 20px;
 }
 
-section#body img {
-width: 30%;
-float: left;
-margin: 10px;
+/* Products */
+.products {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
-section#body p {
+/* Product details */
+.product {
+flex: 0 1 24%;
+border: 1px solid #ccc;
 padding: 10px;
+margin-bottom: 16px;
 }
 
-footer {
-background-color: #333333;
+/* Footer */
+.footer {
+background-color: #333;
 color: white;
-text-align: center;
 padding: 10px;
+text-align: center;
 }
 </style>
 </head>
+
 <body>
 
-<header>
+<div class="header">
 <h1>Amazon</h1>
-<nav>
 <a href="#">Home</a>
 <a href="#">Products</a>
 <a href="#">Buttons</a>
-</nav>
-</header>
+</div>
 
-<section id="body">
-<img src="img/product1.jpg">
-<p>Product description goes here.</p>
+<div class="body">
 
-<img src="img/product2.jpg">
-<p>Another product description.</p>
-</section>
+<h2>Our Products</h2>
 
-<footer>
-<p>&copy; 2023 Amazon</p>
-</footer>
+<div class="products">
+
+<div class="product">
+  <img src="product1.jpg">
+  <p>Product 1</p>
+  <p>Description</p>
+  <p>$19.99</p>
+</div>
+
+<div class="product">
+  <img src="product2.jpg"> 
+  <p>Product 2</p>
+  <p>Description</p>
+  <p>$29.99</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>Copyright 2021</p>
+</div>
 
 </body>
 </html>
